@@ -6,7 +6,7 @@ dht DHT ;                       // declaring dht a variable
 
 void setup ( ) {                                                
 
-  Serial.begin ( 9600 ) ;       // starting the 16 x 2 lcd
+  Serial.begin ( 9600 ) ;      
 
 }
 
@@ -14,21 +14,20 @@ void loop ( )
 
 {
 
-  int chk = DHT.read11(DHT11_PIN ) ;         // Checking that either the dht is working or not
-
+  int chk = DHT.read11(DHT11_PIN ) ;        
                //  starting the cursor from  top left
 
-  Serial.print ( " Temperature is : " ) ;       // printing the “ Temperature is : ” on the lcd 
+  Serial.print ( " Temperature is : " ) ;   
 
-  Serial.print ( DHT.temperature ) ;            // printing the temperature on the lcd
+  Serial.print ( DHT.temperature ) ;          
                      
 
-  Serial.print ( " Humidity is : " ) ;         // printing “ humidity is : ” on the display
+  Serial.print ( " Humidity is : " ) ;       
 
-  Serial.print ( DHT.humidity ) ;              // printing humidity on the display
+  Serial.print ( DHT.humidity ) ;             
 
- Serial.print ( " % " ) ;                     // printing “ % ” on display
+ Serial.print ( " % " ) ;                     
 
-  delay ( 1000 ) ;                          // Giving delay of 1 second.
+  delay ( 1000 ) ;                   
 
 }
